@@ -1,0 +1,178 @@
+<html>
+    <head>
+        
+            <meta charset="UTF-8">
+            <title>pick time</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <style>
+            .card{
+                position: absolute;
+                top : 10%;
+                width:50%;
+                left: 25%;
+                right:25%;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                background:rgba(52, 78, 59, 0.5);
+            }
+        
+
+            .card:hover {
+  box-shadow: 5px 8px 16px 5px rgba(0,0,0,0.2);
+}
+
+        
+            .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+        }
+        .button:hover {
+          background-color: #c4b928;
+          color: white;
+        }
+        .inlen{
+            width: 80%;
+            left:10%;
+            right:10%;   
+            
+            color: green;
+        }
+        .row .input-field input:focus {
+           border-bottom: 1px  white !important;
+           box-shadow: 0 1px 0 0 white !important;
+         }
+         .input-field input:focus + label {
+           color: white !important;
+         }
+        label {
+            padding: 12px 12px 12px 0px;
+            display: inline-block;
+        }
+        
+        html{
+          height: 100%;
+          width:100%;
+          background-image: linear-gradient(to right, rgb(17, 160, 76) , rgb(197, 218, 84));
+        }
+        
+        
+        
+        .timepicker-digital-display{
+          background-color: green;
+        }
+        
+        .timepicker-close{
+          color: green;
+          }
+         
+        .datepicker-date-display { background-color: green; }
+        
+        .datepicker-day--selected:hover, .datepicker--focused ,.datepicker-day--selected { background-color: green ;}
+        
+        
+        
+        .datepicker-cancel { color: green }
+        .datepicker-done { color: green }
+        .datepicker-day { color: green}
+        
+        
+        .timepicker-tick:hover { background-color: green }
+        .timepicker-canvas line { stroke: green; }
+        .timepicker-canvas-bearing { fill: green; }
+        .timepicker-canvas-bg { fill:green; }
+        </style>
+    </head>
+    <body>
+            
+                    <div class="container">
+                        <div class="row" >
+                            <div class="col s12 m3"></div>
+                            
+                            <div class="col s12 m6">
+                            
+                            <div class="card" >
+                            <h3 style="text-align: center;color: #ffffff;">update alarm</h3>
+                            <form method="POST" action="http://localhost:5000/users/update/<%= context._id %>" >
+                            <div class="input-field inlen">
+                                <input type="text" class="datepicker white-text"  value="<%= context.date %>"name="date" required>
+                                <label for="date" >set date</label>
+                            </div>
+                            <div class="input-field inlen" >
+                                <input type="text"  class="timepicker white-text" value="<%= context.time %>" name="time" required>
+                                <label for="time" >set time</label>
+                            </div>
+                            <div class="inlen input-field ">
+                                <input type="text" class="reason white-text" value="<%= context.reason %>" name="reason" required>
+                                <label for="reason">reason</label>
+                            </div>
+                            <div class="input-field"  style="text-align: center;" >
+                                <input type="submit" class="button" value="save">
+                                
+                            </div>
+                            
+                            </form>
+                            <form action="http://localhost:5000/users/ooha.t17@iiits.in">
+                                <div class="input-field"  style="text-align: center;" >
+                                        <input type="submit" class="button" value="cancel">
+                                        
+                                    </div>
+                                
+                            </form>
+                            </div>
+                        
+                            </div>
+                            
+                            <div class="col s12 m3"></div>
+                        </div>
+                        </div>
+                        
+                    
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                         <script>
+                         const timer=document.querySelector('.timepicker');
+                         M.Timepicker.init(timer,{});
+                         const date=document.querySelector('.datepicker');
+                         M.Datepicker.init(date,{});
+                         </script>
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+    </body>
+</html>

@@ -1,0 +1,85 @@
+{{!-- 
+{{#each list}}
+<a href="#">{{this.username}}</a>
+<p>{{this.email}}</p>
+<p>{{this.city}}</p>
+<p>{{this.type}}</p>
+<p>{{this._id}}</p>
+<form action="list/notify" >
+   <button>request</button>
+</form>
+<a href="/notify">request</a><br>
+{{/each}}<br> --}}
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>requests</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <style>
+      </style>
+   </head>
+   <body style="background-color:#ccffcc">
+      {{!-- <img src="https://images.pexels.com/photos/2153824/pexels-photo-2153824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="image" style="width:100%;height:500px;"> --}}
+      {{#each list}}
+      <div style="float:left;padding-left:5%;padding-top:5%">
+         <div class="row" style="padding-top:5%;padding-right:5%;">
+            <div class="col-sm-7" style="min-width:400px;">
+               <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);float:left;">
+                  <div class="card-body">
+                     <h5 class="card-title" style="text-transform:uppercase;">{{this.username}}</h5>
+                     <p class="card-text">
+                        <span>
+                           <h7>Email</h7>
+                           <img src="https://cdn1.iconfinder.com/data/icons/emails-6/32/email_mail_verify_verified_inbox_true_right-512.png" alt=""style="height:35px;width:35px">
+                        </span>
+                        :
+                        {{this.email}}<br>
+                        <span>
+                           <h7>Location</h7>
+                           <img src="https://us.123rf.com/450wm/tmricons/tmricons1510/tmricons151000176/45804740-stock-vector-map-pointer-icon-location-button-.jpg?ver=6" alt=""style="height:35px;width:35px">
+                        </span>
+                        :
+                        {{this.street}},{{this.city}},{{this.pincode}}<br>
+                        <span>
+                           <h7>Phone No</h7>
+                           <img src="https://cdn0.iconfinder.com/data/icons/vector-black-hotel-icons/256/phone_line-512.png" alt=""style="height:35px;width:35px">
+                        </span>
+                        :
+                        {{this.mobilenumber}}
+                        {{this._id}}
+                     </p>
+                     <a href="/users/list/sentreq/{{this._id}}" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Request</a>
+                     {{!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                     Request
+                     </button> --}}
+                     <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                 <h4 class="modal-title">Request Confirmation</h4>
+                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                 send request....
+                              </div>
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+                                 {{!-- <a href="/users/list/sentreq/{{this._id}}"><button type="button" class="btn btn-primary">Send</button></a> --}}
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/each}}
+   </body>
+</html>

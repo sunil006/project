@@ -1,0 +1,30 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\neeharika\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v10.15.2
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle soadproject@1.0.0~prestart: soadproject@1.0.0
+6 silly lifecycle soadproject@1.0.0~prestart: no script for prestart, continuing
+7 info lifecycle soadproject@1.0.0~start: soadproject@1.0.0
+8 verbose lifecycle soadproject@1.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle soadproject@1.0.0~start: PATH: C:\Users\neeharika\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;C:\Users\neeharika\Desktop\5thsem\soadproject\node_modules\.bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\nodejs\;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\neeharika\AppData\Local\Programs\Python\Python38;C:\Users\neeharika\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\neeharika\AppData\Local\Programs\Python\Python37\Scripts\pip;C:\Users\neeharika\AppData\Local\Microsoft\WindowsApps;C:\Users\neeharika\AppData\Local\GitHubDesktop\bin;C:\Python35\Scripts;C:\Users\neeharika\AppData\Local\atom\bin;C:\Users\neeharika\AppData\Local\Microsoft\WindowsApps;C:\Users\neeharika\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\flutter\bin;C:\Windows\System32;C:\Users\neeharika\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk-10.0.1\bin;C:\Users\neeharika\Downloads\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\neeharika\Downloads\flutter\bin;C:\Program Files\Dart\dart-sdk\bin;C:\Users\neeharika\AppData\Local\Yarn\bin;
+10 verbose lifecycle soadproject@1.0.0~start: CWD: C:\Users\neeharika\Desktop\5thsem\soadproject
+11 silly lifecycle soadproject@1.0.0~start: Args: [ '/d /s /c', 'nodemon app.js' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at process.kill (internal/process/per_thread.js:198:13)
+12 verbose stack     at process.listener (C:\Users\neeharika\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at process.emit (events.js:194:15)
+13 verbose cwd C:\Users\neeharika\Desktop\5thsem\soadproject
+14 error Windows_NT 10.0.17134
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\neeharika\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "start"
+16 error node v10.15.2
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

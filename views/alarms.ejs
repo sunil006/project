@@ -1,0 +1,177 @@
+
+
+
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+ 
+          background-image: linear-gradient(to right, rgb(17, 160, 76) , rgb(197, 218, 84));
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5% 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 90%;
+}
+.button:hover {
+  box-shadow: 5px 8px 16px 5px rgba(0,0,0,0.2);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card:hover {
+  box-shadow: 5px 8px 16px 5px rgba(0,0,0,0.2);
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height:100%;
+  width:80%;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, rgb(62, 71, 45) 40%, rgb(111, 221, 116) 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1%;
+  text-transform: capitalize;
+  margin: 0%;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+#fixedbutton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding:0.8% 0.8%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 90%;
+  position: fixed;
+  top: 2%;
+  right: 1.7%;
+  
+   /* Green */
+
+ 
+  
+  cursor: pointer;
+  
+}
+#fixedbutton:hover {
+  box-shadow: 3px 4px 4px  rgba(19, 63, 2, 0.2);
+}
+</style>
+<head>
+</head>
+<body>
+  
+<div id="grad">
+    <h1 style="color: #ffffff;">YOUR ALARMS</h1>
+    <ul class="cards">
+        <% for(var i=0; i< Object.keys(context["context"]).length ; i++) {%>
+          
+      <li class="cards_item">
+        <div class="card card_content">
+            
+            <div class="container">
+
+                <h4 class="card_title"><b>  <%= (context)["context"][i].reason%></b></h4>
+                <p class="card_text"> <%= (context)["context"][i].date%></p>  
+                <p class="card_text"> <%= (context)["context"][i].time%></p>  
+                <form  method="GET" action="http://localhost:5000/alarms/delete/<%= (context)['context'][i]._id%>">  
+                <input type="submit" class="button"  value="delete">
+                </form>
+                <form  method="GET" action="http://localhost:5000/alarms/update_alarm/<%= (context)['context'][i]._id%>">  
+                  <input type="submit" class="button"  value="update">
+                </form> 
+                </div>
+        </div>
+      </li>
+      <% } %>
+    </ul>
+    <form  method="GET" action="http://localhost:5000/alarms/set/add_new_alarm/<%= (context)['email']%>">  
+      <input type="submit" id="fixedbutton" class="cards_text" value="new alarm">
+    </form> 
+  </div>
+   
+  
+        
+       
+  
+  
+</html>

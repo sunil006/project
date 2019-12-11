@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b2d263d93e4458db7a081824c57df32 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6b2d263d93e4458db7a081824c57df32" ></div>
+        
+</body>
+<script>    
+    
+            var map_6b2d263d93e4458db7a081824c57df32 = L.map(
+                "map_6b2d263d93e4458db7a081824c57df32",
+                {
+                    center: [15.8, 77.8],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a4ab927017074e109aa6d18293941e4b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+            var marker_c249d1ed67e1460eabe1be3c47d0c194 = L.marker(
+                [22.5584995, 72.9625629],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_90e9c2bfa55548aa942b79c0e0dbdcf2 = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_c249d1ed67e1460eabe1be3c47d0c194.setIcon(custom_icon_90e9c2bfa55548aa942b79c0e0dbdcf2);
+        
+    
+        var popup_705e9b81723d4b9aab18fae94c8a39ad = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_2aac5fa6ee4d49d18431776b2d7c3702 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydQb3RhdG8nLCAnIFRvbWF0byddIikKICAgICAgICAgICAgdmFyIGNyb3A9QXJyYXkuZnJvbShbJ1BvdGF0bycsICcgVG9tYXRvJ10pCiAgICAgICAgICAgIHZhciBwcmljZT1BcnJheS5mcm9tKFsnMTQwMCcsICcgOTUwJ10pCiAgICAgICAgICAgIGZvcih2YXIgaT0wO2k8Y3JvcC5sZW5ndGg7CiAgICAgICAgICAgIHRleHQrPWNyb3BbaV0rIi0iK3ByaWNlW2ldKyI8YnI+IiwKICAgICAgICAgICAgaSsrKQogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZGVtbyIpLmlubmVySFRNTCA9IHRleHQ7CiAgICAgICAgICAgIGNvbnNvbGUubG9nKHRleHQpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NjcmlwdD4KICAgICAgICA=" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_705e9b81723d4b9aab18fae94c8a39ad.setContent(i_frame_2aac5fa6ee4d49d18431776b2d7c3702);
+        
+
+        marker_c249d1ed67e1460eabe1be3c47d0c194.bindPopup(popup_705e9b81723d4b9aab18fae94c8a39ad)
+        ;
+
+        
+    
+    
+            marker_c249d1ed67e1460eabe1be3c47d0c194.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65379093dc134778a97aa516f1a75b3b = L.marker(
+                [20.86496315, 87.0248034250916],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_1eb0f8566e5c42debee82fb60c929c78 = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_65379093dc134778a97aa516f1a75b3b.setIcon(custom_icon_1eb0f8566e5c42debee82fb60c929c78);
+        
+    
+        var popup_34ae09737c2444b0ae3dd742d2f32eb3 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_d289720ff89641dabbe9c05b2a3a1998 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydCaGluZGkoTGFkaWVzIEZpbmdlciknLCAnIENhYmJhZ2UnLCAnIENhdWxpZmxvd2VyJywgJyBHcmVlbiBDaGlsbGknLCAnIFBvdGF0bycsICcgVG9tYXRvJywgJyBCaXR0ZXIgZ291cmQnLCAnIEJyaW5qYWwnLCAnIENhdWxpZmxvd2VyJywgJyBQYWRkeShEaGFuKShDb21tb24pJywgJyBQb3RhdG8nLCAnIFRvbWF0byddIikKICAgICAgICAgICAgdmFyIGNyb3A9QXJyYXkuZnJvbShbJ0JoaW5kaShMYWRpZXMgRmluZ2VyKScsICcgQ2FiYmFnZScsICcgQ2F1bGlmbG93ZXInLCAnIEdyZWVuIENoaWxsaScsICcgUG90YXRvJywgJyBUb21hdG8nLCAnIEJpdHRlciBnb3VyZCcsICcgQnJpbmphbCcsICcgQ2F1bGlmbG93ZXInLCAnIFBhZGR5KERoYW4pKENvbW1vbiknLCAnIFBvdGF0bycsICcgVG9tYXRvJ10pCiAgICAgICAgICAgIHZhciBwcmljZT1BcnJheS5mcm9tKFsnNTAwMCcsICcgMjMwMCcsICcgMjYwMCcsICcgMjAwMCcsICcgMTcwMCcsICcgMTYwMCcsICcgNDUwMCcsICcgMzUwMCcsICcgMzUwMCcsICcgMTgxNScsICcgMTcwMCcsICcgMTUwMCddKQogICAgICAgICAgICBmb3IodmFyIGk9MDtpPGNyb3AubGVuZ3RoOwogICAgICAgICAgICB0ZXh0Kz1jcm9wW2ldKyItIitwcmljZVtpXSsiPGJyPiIsCiAgICAgICAgICAgIGkrKykKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRlbW8iKS5pbm5lckhUTUwgPSB0ZXh0OwogICAgICAgICAgICBjb25zb2xlLmxvZyh0ZXh0KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zY3JpcHQ+CiAgICAgICAg" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_34ae09737c2444b0ae3dd742d2f32eb3.setContent(i_frame_d289720ff89641dabbe9c05b2a3a1998);
+        
+
+        marker_65379093dc134778a97aa516f1a75b3b.bindPopup(popup_34ae09737c2444b0ae3dd742d2f32eb3)
+        ;
+
+        
+    
+    
+            marker_65379093dc134778a97aa516f1a75b3b.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9558d74ae2dc44d7b3eac940cf5518f5 = L.marker(
+                [13.2162432, 79.1050786173721],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_84d3aca4e14449ab8993ee41d13b3adb = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_9558d74ae2dc44d7b3eac940cf5518f5.setIcon(custom_icon_84d3aca4e14449ab8993ee41d13b3adb);
+        
+    
+        var popup_201ac4907e364485980c914e84768e62 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_b8835efac5344b1a9a2b9524ef4bcfa7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydUb21hdG8nXSIpCiAgICAgICAgICAgIHZhciBjcm9wPUFycmF5LmZyb20oWydUb21hdG8nXSkKICAgICAgICAgICAgdmFyIHByaWNlPUFycmF5LmZyb20oWyc4MDAnXSkKICAgICAgICAgICAgZm9yKHZhciBpPTA7aTxjcm9wLmxlbmd0aDsKICAgICAgICAgICAgdGV4dCs9Y3JvcFtpXSsiLSIrcHJpY2VbaV0rIjxicj4iLAogICAgICAgICAgICBpKyspCiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJkZW1vIikuaW5uZXJIVE1MID0gdGV4dDsKICAgICAgICAgICAgY29uc29sZS5sb2codGV4dCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc2NyaXB0PgogICAgICAgIA==" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_201ac4907e364485980c914e84768e62.setContent(i_frame_b8835efac5344b1a9a2b9524ef4bcfa7);
+        
+
+        marker_9558d74ae2dc44d7b3eac940cf5518f5.bindPopup(popup_201ac4907e364485980c914e84768e62)
+        ;
+
+        
+    
+    
+            marker_9558d74ae2dc44d7b3eac940cf5518f5.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ced9d34477c64d3c8f5759acc74bc4b9 = L.marker(
+                [20.75, 85.5],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_3e0adce150b241d9948068ab08e54b89 = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_ced9d34477c64d3c8f5759acc74bc4b9.setIcon(custom_icon_3e0adce150b241d9948068ab08e54b89);
+        
+    
+        var popup_6604bc43225e4c6b91e67ab35c2444db = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_151b713df8fb4a87a89e3ff096f2d082 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydCYW5hbmEgLSBHcmVlbicsICcgQmVhbnMnLCAnIEJoaW5kaShMYWRpZXMgRmluZ2VyKScsICcgQml0dGVyIGdvdXJkJywgJyBCcmluamFsJywgJyBDdWN1bWJhcihLaGVlcmEpJywgJyBQb2ludGVkIGdvdXJkIChQYXJ2YWwpJywgJyBQb3RhdG8nLCAnIFB1bXBraW4nLCAnIFRvbWF0byddIikKICAgICAgICAgICAgdmFyIGNyb3A9QXJyYXkuZnJvbShbJ0JhbmFuYSAtIEdyZWVuJywgJyBCZWFucycsICcgQmhpbmRpKExhZGllcyBGaW5nZXIpJywgJyBCaXR0ZXIgZ291cmQnLCAnIEJyaW5qYWwnLCAnIEN1Y3VtYmFyKEtoZWVyYSknLCAnIFBvaW50ZWQgZ291cmQgKFBhcnZhbCknLCAnIFBvdGF0bycsICcgUHVtcGtpbicsICcgVG9tYXRvJ10pCiAgICAgICAgICAgIHZhciBwcmljZT1BcnJheS5mcm9tKFsnMjgwMCcsICcgMzgwMCcsICcgMzgwMCcsICcgMzkwMCcsICcgMjgwMCcsICcgMjkwMCcsICcgNDgwMCcsICcgMjAwMCcsICcgMTgwMCcsICcgMjUwMCddKQogICAgICAgICAgICBmb3IodmFyIGk9MDtpPGNyb3AubGVuZ3RoOwogICAgICAgICAgICB0ZXh0Kz1jcm9wW2ldKyItIitwcmljZVtpXSsiPGJyPiIsCiAgICAgICAgICAgIGkrKykKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRlbW8iKS5pbm5lckhUTUwgPSB0ZXh0OwogICAgICAgICAgICBjb25zb2xlLmxvZyh0ZXh0KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zY3JpcHQ+CiAgICAgICAg" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_6604bc43225e4c6b91e67ab35c2444db.setContent(i_frame_151b713df8fb4a87a89e3ff096f2d082);
+        
+
+        marker_ced9d34477c64d3c8f5759acc74bc4b9.bindPopup(popup_6604bc43225e4c6b91e67ab35c2444db)
+        ;
+
+        
+    
+    
+            marker_ced9d34477c64d3c8f5759acc74bc4b9.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21bd30a9911448938d320d7f8b0be787 = L.marker(
+                [27.4844597, 94.9019447],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_8b7098b5831a4775937ab013ec150836 = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_21bd30a9911448938d320d7f8b0be787.setIcon(custom_icon_8b7098b5831a4775937ab013ec150836);
+        
+    
+        var popup_f2dbb2ecea9d419383848fbc796f8023 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_b02264d96b514f798da11e65012b5b7d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydBcmhhciBEYWwoVHVyIERhbCknLCAnIEJlbmdhbCBHcmFtKEdyYW0pKFdob2xlKScsICcgR3JlZW4gR3JhbSAoTW9vbmcpKFdob2xlKScsICcgTWFzdXIgRGFsJywgJyBPbmlvbicsICcgUG90YXRvJywgJyBSaWNlJywgJyBXaGVhdCddIikKICAgICAgICAgICAgdmFyIGNyb3A9QXJyYXkuZnJvbShbJ0FyaGFyIERhbChUdXIgRGFsKScsICcgQmVuZ2FsIEdyYW0oR3JhbSkoV2hvbGUpJywgJyBHcmVlbiBHcmFtIChNb29uZykoV2hvbGUpJywgJyBNYXN1ciBEYWwnLCAnIE9uaW9uJywgJyBQb3RhdG8nLCAnIFJpY2UnLCAnIFdoZWF0J10pCiAgICAgICAgICAgIHZhciBwcmljZT1BcnJheS5mcm9tKFsnNzYwMCcsICcgNTMwMCcsICcgNzcwMCcsICcgNTgwMCcsICcgNjAwMCcsICcgMTMwMCcsICcgMzEwMCcsICcgMTkwMCddKQogICAgICAgICAgICBmb3IodmFyIGk9MDtpPGNyb3AubGVuZ3RoOwogICAgICAgICAgICB0ZXh0Kz1jcm9wW2ldKyItIitwcmljZVtpXSsiPGJyPiIsCiAgICAgICAgICAgIGkrKykKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRlbW8iKS5pbm5lckhUTUwgPSB0ZXh0OwogICAgICAgICAgICBjb25zb2xlLmxvZyh0ZXh0KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zY3JpcHQ+CiAgICAgICAg" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_f2dbb2ecea9d419383848fbc796f8023.setContent(i_frame_b02264d96b514f798da11e65012b5b7d);
+        
+
+        marker_21bd30a9911448938d320d7f8b0be787.bindPopup(popup_f2dbb2ecea9d419383848fbc796f8023)
+        ;
+
+        
+    
+    
+            marker_21bd30a9911448938d320d7f8b0be787.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebeb54f5224b4997b5f44e9929fdf4f2 = L.marker(
+                [10.0383947, 76.5074145180173],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_3c19aa2d50a34a0dbac519cdcc017882 = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_ebeb54f5224b4997b5f44e9929fdf4f2.setIcon(custom_icon_3c19aa2d50a34a0dbac519cdcc017882);
+        
+    
+        var popup_d32ec1ca4a5947cf8a3ef5c50b08b0b0 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_d4b2cf55f0e042438d96f65474e2fae8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydBbWFyYW50aHVzJywgJyBBcmVjYW51dChCZXRlbG51dC9TdXBhcmkpJywgJyBBc2hnb3VyZCcsICcgQmFuYW5hJywgJyBCYW5hbmEnLCAnIEJhbmFuYSAtIEdyZWVuJywgJyBCaGluZGkoTGFkaWVzIEZpbmdlciknLCAnIEJpdHRlciBnb3VyZCcsICcgQmxhY2sgcGVwcGVyJywgJyBCcmluamFsJywgJyBDYWJiYWdlJywgJyBDYXJyb3QnLCAnIENhdWxpZmxvd2VyJywgJyBDb2xhY2FzaWEnLCAnIEN1Y3VtYmFyKEtoZWVyYSknLCAnIEVsZXBoYW50IFlhbSAoU3VyYW4pJywgJyBGaWVsZCBQZWEnLCAnIEdpbmdlcihHcmVlbiknLCAnIEdyZWVuIENoaWxsaScsICcgTGl0dGxlIGdvdXJkIChLdW5kcnUpJywgJyBNYW5nbyAoUmF3LVJpcGUpJywgJyBQaW5lYXBwbGUnLCAnIFBvdGF0bycsICcgUHVtcGtpbicsICcgU25ha2VndWFyZCcsICcgVG9tYXRvJywgJyBBbWFyYW50aHVzJywgJyBBcmVjYW51dChCZXRlbG51dC9TdXBhcmkpJywgJyBBc2hnb3VyZCcsICcgQmFuYW5hJywgJyBCYW5hbmEnLCAnIEJhbmFuYSAtIEdyZWVuJywgJyBCaGluZGkoTGFkaWVzIEZpbmdlciknLCAnIEJpdHRlciBnb3VyZCcsICcgQmxhY2sgcGVwcGVyJywgJyBCb3R0bGUgZ291cmQnLCAnIEJyaW5qYWwnLCAnIENhYmJhZ2UnLCAnIENhcnJvdCcsICcgQ2F1bGlmbG93ZXInLCAnIENvbGFjYXNpYScsICcgQ3VjdW1iYXIoS2hlZXJhKScsICcgRWxlcGhhbnQgWWFtIChTdXJhbiknLCAnIEZpZWxkIFBlYScsICcgR2luZ2VyKERyeSknLCAnIEdpbmdlcihHcmVlbiknLCAnIEdyZWVuIENoaWxsaScsICcgTGl0dGxlIGdvdXJkIChLdW5kcnUpJywgJyBNYW5nbyAoUmF3LVJpcGUpJywgJyBQaW5lYXBwbGUnLCAnIFBvdGF0bycsICcgUHVtcGtpbicsICcgU25ha2VndWFyZCcsICcgVG9tYXRvJ10iKQogICAgICAgICAgICB2YXIgY3JvcD1BcnJheS5mcm9tKFsnQW1hcmFudGh1cycsICcgQXJlY2FudXQoQmV0ZWxudXQvU3VwYXJpKScsICcgQXNoZ291cmQnLCAnIEJhbmFuYScsICcgQmFuYW5hJywgJyBCYW5hbmEgLSBHcmVlbicsICcgQmhpbmRpKExhZGllcyBGaW5nZXIpJywgJyBCaXR0ZXIgZ291cmQnLCAnIEJsYWNrIHBlcHBlcicsICcgQnJpbmphbCcsICcgQ2FiYmFnZScsICcgQ2Fycm90JywgJyBDYXVsaWZsb3dlcicsICcgQ29sYWNhc2lhJywgJyBDdWN1bWJhcihLaGVlcmEpJywgJyBFbGVwaGFudCBZYW0gKFN1cmFuKScsICcgRmllbGQgUGVhJywgJyBHaW5nZXIoR3JlZW4pJywgJyBHcmVlbiBDaGlsbGknLCAnIExpdHRsZSBnb3VyZCAoS3VuZHJ1KScsICcgTWFuZ28gKFJhdy1SaXBlKScsICcgUGluZWFwcGxlJywgJyBQb3RhdG8nLCAnIFB1bXBraW4nLCAnIFNuYWtlZ3VhcmQnLCAnIFRvbWF0bycsICcgQW1hcmFudGh1cycsICcgQXJlY2FudXQoQmV0ZWxudXQvU3VwYXJpKScsICcgQXNoZ291cmQnLCAnIEJhbmFuYScsICcgQmFuYW5hJywgJyBCYW5hbmEgLSBHcmVlbicsICcgQmhpbmRpKExhZGllcyBGaW5nZXIpJywgJyBCaXR0ZXIgZ291cmQnLCAnIEJsYWNrIHBlcHBlcicsICcgQm90dGxlIGdvdXJkJywgJyBCcmluamFsJywgJyBDYWJiYWdlJywgJyBDYXJyb3QnLCAnIENhdWxpZmxvd2VyJywgJyBDb2xhY2FzaWEnLCAnIEN1Y3VtYmFyKEtoZWVyYSknLCAnIEVsZXBoYW50IFlhbSAoU3VyYW4pJywgJyBGaWVsZCBQZWEnLCAnIEdpbmdlcihEcnkpJywgJyBHaW5nZXIoR3JlZW4pJywgJyBHcmVlbiBDaGlsbGknLCAnIExpdHRsZSBnb3VyZCAoS3VuZHJ1KScsICcgTWFuZ28gKFJhdy1SaXBlKScsICcgUGluZWFwcGxlJywgJyBQb3RhdG8nLCAnIFB1bXBraW4nLCAnIFNuYWtlZ3VhcmQnLCAnIFRvbWF0byddKQogICAgICAgICAgICB2YXIgcHJpY2U9QXJyYXkuZnJvbShbJzI2MDAnLCAnIDIxNTAwJywgJyAyMjAwJywgJyAxODAwJywgJyAzMjAwJywgJyAzMjAwJywgJyAyODAwJywgJyA1NTAwJywgJyAzNDUwMCcsICcgMjgwMCcsICcgMzYwMCcsICcgNTgwMCcsICcgMzgwMCcsICcgNTAwMCcsICcgMjIwMCcsICcgMjYwMCcsICcgNTUwMCcsICcgNjUwMCcsICcgNTUwMCcsICcgMzIwMCcsICcgODUwMCcsICcgMjYwMCcsICcgMzIwMCcsICcgMjIwMCcsICcgMzIwMCcsICcgMzIwMCcsICcgMzUwMCcsICcgMjEwMDAnLCAnIDI4MDAnLCAnIDQ1MDAnLCAnIDMwMDAnLCAnIDM1MDAnLCAnIDI4MDAnLCAnIDMwMDAnLCAnIDM0MDAwJywgJyAxODAwJywgJyAzMDAwJywgJyAyMDAwJywgJyA1NTAwJywgJyA0MDAwJywgJyA1NTAwJywgJyAyNTAwJywgJyAyNTAwJywgJyA3NTAwJywgJyAyNDAwMCcsICcgODUwMCcsICcgNjUwMCcsICcgMjgwMCcsICcgNTUwMCcsICcgNDAwMCcsICcgMjgwMCcsICcgMjAwMCcsICcgMzAwMCcsICcgMjUwMCddKQogICAgICAgICAgICBmb3IodmFyIGk9MDtpPGNyb3AubGVuZ3RoOwogICAgICAgICAgICB0ZXh0Kz1jcm9wW2ldKyItIitwcmljZVtpXSsiPGJyPiIsCiAgICAgICAgICAgIGkrKykKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRlbW8iKS5pbm5lckhUTUwgPSB0ZXh0OwogICAgICAgICAgICBjb25zb2xlLmxvZyh0ZXh0KQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zY3JpcHQ+CiAgICAgICAg" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_d32ec1ca4a5947cf8a3ef5c50b08b0b0.setContent(i_frame_d4b2cf55f0e042438d96f65474e2fae8);
+        
+
+        marker_ebeb54f5224b4997b5f44e9929fdf4f2.bindPopup(popup_d32ec1ca4a5947cf8a3ef5c50b08b0b0)
+        ;
+
+        
+    
+    
+            marker_ebeb54f5224b4997b5f44e9929fdf4f2.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_641c067e665f40959126fbed0c325b41 = L.marker(
+                [21.737995, 73.6285633093964],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_fe88879230fd4dd8a7b4808462d737a0 = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_641c067e665f40959126fbed0c325b41.setIcon(custom_icon_fe88879230fd4dd8a7b4808462d737a0);
+        
+    
+        var popup_a1948a5b893b44ffb58efd686013eb0b = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_a164f5578c8843e393409ad2d34996d2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydDb3R0b24nXSIpCiAgICAgICAgICAgIHZhciBjcm9wPUFycmF5LmZyb20oWydDb3R0b24nXSkKICAgICAgICAgICAgdmFyIHByaWNlPUFycmF5LmZyb20oWyc1MjUwJ10pCiAgICAgICAgICAgIGZvcih2YXIgaT0wO2k8Y3JvcC5sZW5ndGg7CiAgICAgICAgICAgIHRleHQrPWNyb3BbaV0rIi0iK3ByaWNlW2ldKyI8YnI+IiwKICAgICAgICAgICAgaSsrKQogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZGVtbyIpLmlubmVySFRNTCA9IHRleHQ7CiAgICAgICAgICAgIGNvbnNvbGUubG9nKHRleHQpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NjcmlwdD4KICAgICAgICA=" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_a1948a5b893b44ffb58efd686013eb0b.setContent(i_frame_a164f5578c8843e393409ad2d34996d2);
+        
+
+        marker_641c067e665f40959126fbed0c325b41.bindPopup(popup_a1948a5b893b44ffb58efd686013eb0b)
+        ;
+
+        
+    
+    
+            marker_641c067e665f40959126fbed0c325b41.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_474b0d3eec6641288c52a9b1efbaeef7 = L.marker(
+                [22.1181799, 84.0361994],
+                {}
+            ).addTo(map_6b2d263d93e4458db7a081824c57df32);
+        
+    
+        var custom_icon_bad176b945ff4f13b14751ee861cd2a4 = L.icon({"iconSize": [25, 25], "iconUrl": "https://image.flaticon.com/icons/svg/755/755140.svg"});
+        marker_474b0d3eec6641288c52a9b1efbaeef7.setIcon(custom_icon_bad176b945ff4f13b14751ee861cd2a4);
+        
+    
+        var popup_660440c754954e579df4335b7d141454 = L.popup({"maxWidth": 2650});
+
+        
+            var i_frame_5999cac4e9f34f898e3c1aed77ad4b92 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPGgyPnByaWNlcyBvZiBjcm9wczwvaDI+CiAgICAgICAgICAgIDxwIGlkPSJkZW1vIj48L3A+CiAgICAgICAgICAgIDxzY3JpcHQ+CiAgICAgICAgICAgIHZhciB0ZXh0PSIiCiAgICAgICAgICAgIGNvbnNvbGUubG9nKHR5cGVvZiAiWydCYW5hbmEgLSBHcmVlbicsICcgQmhpbmRpKExhZGllcyBGaW5nZXIpJywgJyBCbGFjayBHcmFtIChVcmQgQmVhbnMpKFdob2xlKScsICcgQmxhY2sgR3JhbSAoVXJkIEJlYW5zKShXaG9sZSknLCAnIEJyaW5qYWwnLCAnIENhYmJhZ2UnLCAnIENhcHNpY3VtJywgJyBDYXJyb3QnLCAnIENhdWxpZmxvd2VyJywgJyBGcmVuY2ggQmVhbnMgKEZyYXNiZWFuKScsICcgT3JhbmdlJywgJyBPcmFuZ2UnXSIpCiAgICAgICAgICAgIHZhciBjcm9wPUFycmF5LmZyb20oWydCYW5hbmEgLSBHcmVlbicsICcgQmhpbmRpKExhZGllcyBGaW5nZXIpJywgJyBCbGFjayBHcmFtIChVcmQgQmVhbnMpKFdob2xlKScsICcgQmxhY2sgR3JhbSAoVXJkIEJlYW5zKShXaG9sZSknLCAnIEJyaW5qYWwnLCAnIENhYmJhZ2UnLCAnIENhcHNpY3VtJywgJyBDYXJyb3QnLCAnIENhdWxpZmxvd2VyJywgJyBGcmVuY2ggQmVhbnMgKEZyYXNiZWFuKScsICcgT3JhbmdlJywgJyBPcmFuZ2UnXSkKICAgICAgICAgICAgdmFyIHByaWNlPUFycmF5LmZyb20oWyc0MDAwJywgJyA0MDAwJywgJyA4MDAwJywgJyA4MDAwJywgJyA0MDAwJywgJyA0MDAwJywgJyA4MDAwJywgJyAxMDAwJywgJyA0MDAwJywgJyA0MDAwJywgJyA4MDAwJywgJyA4MDAwJ10pCiAgICAgICAgICAgIGZvcih2YXIgaT0wO2k8Y3JvcC5sZW5ndGg7CiAgICAgICAgICAgIHRleHQrPWNyb3BbaV0rIi0iK3ByaWNlW2ldKyI8YnI+IiwKICAgICAgICAgICAgaSsrKQogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZGVtbyIpLmlubmVySFRNTCA9IHRleHQ7CiAgICAgICAgICAgIGNvbnNvbGUubG9nKHRleHQpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NjcmlwdD4KICAgICAgICA=" width="500" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_660440c754954e579df4335b7d141454.setContent(i_frame_5999cac4e9f34f898e3c1aed77ad4b92);
+        
+
+        marker_474b0d3eec6641288c52a9b1efbaeef7.bindPopup(popup_660440c754954e579df4335b7d141454)
+        ;
+
+        
+    
+    
+            marker_474b0d3eec6641288c52a9b1efbaeef7.bindTooltip(
+                `<div>
+                     click to get crop prices
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

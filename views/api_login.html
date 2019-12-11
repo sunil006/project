@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width-device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style type="text/css">
+          #map{ width:530px; height: 200px; }
+        </style>
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="form-container">
+        <span class="form-heading">SIGN UP</span>
+        <form action="http://localhost:5000/users/api_login" method="POST">
+            <div class="input-group">
+              <div class="fontstyle">Email:</div>
+            <input type="email" name="email" required>
+            <span class="bar"></span>
+            </div>
+            <div class="input-group">
+            <div class="fontstyle">Password:</div>
+            <input type='password' name="password" required>
+            <span class="bar"></span>
+            </div>
+         <div class="input-group">
+           <button type="submit" class="button1" >
+          <i class="fa fa-arrow-right icon"></i>
+          
+          </button>
+          
+        </div>
+        
+            <div class="input-group">      
+            <div class="switch-login fontstyle">Don't have an account?<a href="/users/api_service">login</a></div>
+            <div>
+          
+         
+
+        
+    
+    
+     
+         
+        </form>
+        
+
+      </div>
+    </div>
+
+</body>
+  </html>
